@@ -6,11 +6,7 @@ const app = express();
 var counter = 0;
 
 //Set up Route to increment counter upon each access.
-app.get('/', function(req, res)  {
-  res.send("<h1>Hello world!</h1>");
-});
-
-app.get('/count', function(req, res){
+app.get('/', function(req, res){
   counter++;
   res.send("<h1>You have connected "+counter+ " times </h1>");
 });
